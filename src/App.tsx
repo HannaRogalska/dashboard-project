@@ -1,8 +1,6 @@
 import './App.css'
-import {  HStack, Box } from "@chakra-ui/react";
+import {  HStack } from "@chakra-ui/react";
 import {
-  LightMode,
-  DarkMode,
   useColorMode,
   ColorModeIcon,
   ColorModeButton,
@@ -11,8 +9,7 @@ import {
 function App() {
   const { toggleColorMode } = useColorMode();
   return (
-    <HStack>
-      
+    <HStack bg='brand.500'>
       <ColorModeButton onClick={toggleColorMode}>
         <ColorModeIcon />
       </ColorModeButton>
