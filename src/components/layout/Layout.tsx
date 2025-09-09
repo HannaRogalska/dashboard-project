@@ -1,12 +1,16 @@
 import { Box, Spinner, VStack, Flex } from "@chakra-ui/react";
 import  { Suspense } from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import ToggleBtn from "../toggleBtn/toggleBtn";
 
 const Layout = () => {
   return (
     <VStack minH="100vh" justify="space-between">
       <Flex as="header" w="100%" justify="space-between" p="4">
-        <Box>LOGO</Box>
+        <Box>
+          <ToggleBtn />
+        </Box>
+
         <Flex gap="2">
           <NavLink to="/">Dashboard</NavLink>
           <NavLink to="*">Some</NavLink>

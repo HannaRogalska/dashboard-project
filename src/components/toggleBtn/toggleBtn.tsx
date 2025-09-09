@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/color-mode";
 
 
-const toggleBtn = () => {
+const ToggleBtn = () => {
  const { toggleColorMode } = useColorMode();
  return (
    <ColorModeButton onClick={toggleColorMode}>
@@ -15,4 +15,4 @@ const toggleBtn = () => {
  );
 }
 
-export default toggleBtn
+export default ToggleBtn
