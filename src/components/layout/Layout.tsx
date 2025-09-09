@@ -1,5 +1,5 @@
-import { Box, Spinner, VStack, Flex, Center } from "@chakra-ui/react";
-import React, { Suspense } from "react";
+import { Box, Spinner, VStack, Flex } from "@chakra-ui/react";
+import  { Suspense } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
 const Layout = () => {
