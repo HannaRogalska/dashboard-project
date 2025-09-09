@@ -1,20 +1,15 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import {  HStack } from "@chakra-ui/react";
-import {
-  useColorMode,
-  ColorModeIcon,
-  ColorModeButton,
-} from "@/components/ui/color-mode";
+import Dashboard from './pages/Dashboard'
+
+
 
 function App() {
-  const { toggleColorMode } = useColorMode();
   return (
-    <HStack bg='brand.500'>
-      <ColorModeButton onClick={toggleColorMode}>
-        <ColorModeIcon />
-      </ColorModeButton>
-    </HStack>
-  );
+    <Routes>
+      <Route path='/' element={<Dashboard/>} />
+  </Routes>
+  )
 }
 
 export default App
