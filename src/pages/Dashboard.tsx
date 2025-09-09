@@ -3,7 +3,7 @@ import React from 'react'
 
 const Dashboard = () => {
   return (
-    <Box p="6" bg="gray.50" minH="100vh">
+    <Box p="6" minH="100vh"  bg="brand.50">
       <Heading mb="4">Dashboard</Heading>
     </Box>
   );
