@@ -1,7 +1,7 @@
 import { Box, Spinner, VStack, Flex } from "@chakra-ui/react";
 import  { Suspense } from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import ToggleBtn from "../toggleBtn/toggleBtn";
+import ToggleBtn from "../toggleBtn/ToggleBtn";
 
 const Layout = () => {
   return (

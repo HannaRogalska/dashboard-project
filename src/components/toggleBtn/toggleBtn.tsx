@@ -7,9 +7,13 @@ import {
 
 
 const ToggleBtn = () => {
- const { toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode();
+  
  return (
-   <ColorModeButton onClick={toggleColorMode}>
+   <ColorModeButton
+     onClick={toggleColorMode}
+     bg={colorMode === "dark" ? "#4e4e4e" : "aqua"}
+   >
      <ColorModeIcon />
    </ColorModeButton>
  );
