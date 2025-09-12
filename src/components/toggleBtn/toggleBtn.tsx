@@ -3,7 +3,7 @@ import {
   useColorMode,
   ColorModeIcon,
   ColorModeButton,
-} from "@/components/ui/color-mode";
+} from "../ui/color-mode";
 
 
 const ToggleBtn = () => {
